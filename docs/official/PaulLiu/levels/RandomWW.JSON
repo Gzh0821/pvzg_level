@@ -1,0 +1,291 @@
+{
+  "#comment": "random",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "random",
+        "LevelNumber": 3,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(RandomImitater@CurrentLevel)",
+          "RTID(CowboyRails@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Random West",
+        "WritenBy": "保罗_刘",
+        "NameMultiLanguage":{
+          "en": "Roulette Game",
+          "zh": "轮盘赌局"
+        },
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(WestStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 5,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 9,
+            "MaxPackets": 3
+          },
+          {
+            "Delay": 12,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "imitater",
+            "Weight": 40
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+        "aliases": [
+          "CowboyRails"
+        ],
+        "objclass": "RailcartProperties",
+        "objdata": {
+          "RailcartType": "railcart_cowboy",
+          "Railcarts": [
+            {
+              "Column": 1,
+              "Row": 1
+            },
+            {
+              "Column": 0,
+              "Row": 0
+            },
+            {
+              "Column": 0,
+              "Row": 4
+            },
+            {
+              "Column": 6,
+              "Row": 3
+            }
+          ],
+          "Rails": [
+            {
+              "Column": 0,
+              "RowEnd": 1,
+              "RowStart": 0
+            },
+            {
+              "Column": 0,
+              "RowEnd": 4,
+              "RowStart": 3
+            },
+            {
+              "Column": 1,
+              "RowEnd": 4,
+              "RowStart": 0
+            },
+            {
+              "Column": 6,
+              "RowEnd": 4,
+              "RowStart": 0
+            }
+          ]
+        }
+      },
+    {
+      "aliases": [
+        "RandomImitater"
+      ],
+      "objclass": "RandomImitaterProperties",
+      "objdata": {
+        "ExcludeListSunProducers": "true",
+        "RandomPlantExcludeList":[
+          "cranjelly",
+          "lilypad",
+          "magnifyinggrass",
+          "peapod",
+          "springbean"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "[STARCHALLENGE_EGYPT_FINALE]",
+        "DescriptiveName": "[STARCHALLENGE_EGYPT_FINALE_NAME]"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 200,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)",
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(prospector@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(west_bullrider@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 300,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)",
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(prospector@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(west_bullrider@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 150,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)",
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(prospector@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(west_bullrider@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 200,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)",
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(prospector@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(west_bullrider@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 8,
+        "WaveCount": 32,
+        "Waves": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,250 @@
+{
+  "#comment": "random",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "random",
+        "LevelNumber": 3,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(RandomImitater@CurrentLevel)",
+          "RTID(PiratePlanks@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Random Sea",
+        "NameMultiLanguage":{
+          "en": "Dice Sea",
+          "zh": "骰子湾"
+        },
+        "WritenBy": "保罗_刘",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(PirateStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 6,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 9,
+            "MaxPackets": 3
+          },
+          {
+            "Delay": 12,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "imitater",
+            "Weight": 40
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "PiratePlanks"
+      ],
+      "objclass": "PiratePlankProperties",
+      "objdata": {
+        "PlankRows": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "RandomImitater"
+      ],
+      "objclass": "RandomImitaterProperties",
+      "objdata": {
+        "ExcludeListSunProducers": "true",
+        "RandomPlantExcludeList":[
+          "cranjelly",
+          "lilypad",
+          "magnifyinggrass",
+          "peapod"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "[STARCHALLENGE_EGYPT_FINALE]",
+        "DescriptiveName": "[STARCHALLENGE_EGYPT_FINALE_NAME]"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 200,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(pirate@ZombieTypes)",
+              "RTID(pirate_armor1@ZombieTypes)",
+              "RTID(pirate_armor2@ZombieTypes)",
+              "RTID(pirate_armor4@ZombieTypes)",
+              "RTID(pirate_gargantuar@ZombieTypes)",
+              "RTID(swashbuckler@ZombieTypes)",
+              "RTID(seagull@ZombieTypes)",
+              "RTID(pelican@ZombieTypes)",
+              "RTID(barrelroller@ZombieTypes)",
+              "RTID(cannon@ZombieTypes)",
+              "RTID(pirate_captain@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 300,
+            "StartingWave": 0,
+            "ZombiePool": [
+             "RTID(pirate@ZombieTypes)",
+              "RTID(pirate_armor1@ZombieTypes)",
+              "RTID(pirate_armor2@ZombieTypes)",
+              "RTID(pirate_armor4@ZombieTypes)",
+              "RTID(pirate_gargantuar@ZombieTypes)",
+              "RTID(swashbuckler@ZombieTypes)",
+              "RTID(seagull@ZombieTypes)",
+              "RTID(pelican@ZombieTypes)",
+              "RTID(barrelroller@ZombieTypes)",
+              "RTID(cannon@ZombieTypes)",
+              "RTID(pirate_captain@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 150,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(pirate@ZombieTypes)",
+              "RTID(pirate_armor1@ZombieTypes)",
+              "RTID(pirate_armor2@ZombieTypes)",
+              "RTID(pirate_armor4@ZombieTypes)",
+              "RTID(pirate_gargantuar@ZombieTypes)",
+              "RTID(swashbuckler@ZombieTypes)",
+              "RTID(seagull@ZombieTypes)",
+              "RTID(pelican@ZombieTypes)",
+              "RTID(barrelroller@ZombieTypes)",
+              "RTID(cannon@ZombieTypes)",
+              "RTID(pirate_captain@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 200,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(pirate@ZombieTypes)",
+              "RTID(pirate_armor1@ZombieTypes)",
+              "RTID(pirate_armor2@ZombieTypes)",
+              "RTID(pirate_armor4@ZombieTypes)",
+              "RTID(pirate_gargantuar@ZombieTypes)",
+              "RTID(swashbuckler@ZombieTypes)",
+              "RTID(seagull@ZombieTypes)",
+              "RTID(pelican@ZombieTypes)",
+              "RTID(barrelroller@ZombieTypes)",
+              "RTID(cannon@ZombieTypes)",
+              "RTID(pirate_captain@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 8,
+        "WaveCount": 32,
+        "Waves": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

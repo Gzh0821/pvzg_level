@@ -1,0 +1,245 @@
+{
+  "#comment": "random",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "random",
+        "LevelNumber": 3,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(RandomImitater@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Random Egypt",
+        "WritenBy": "保罗_刘",
+        "NameMultiLanguage":{
+          "en": "Pharaoh's Dice",
+          "zh": "法老王的骰子"
+        },
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(EgyptStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 6,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 9,
+            "MaxPackets": 3
+          },
+          {
+            "Delay": 12,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "imitater",
+            "Weight": 40
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "RandomImitater"
+      ],
+      "objclass": "RandomImitaterProperties",
+      "objdata": {
+        "ExcludeListSunProducers": "true",
+        "RandomPlantExcludeList":[
+          "cranjelly",
+          "lilypad",
+          "magnifyinggrass",
+          "peapod",
+          "springbean"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "[STARCHALLENGE_EGYPT_FINALE]",
+        "DescriptiveName": "[STARCHALLENGE_EGYPT_FINALE_NAME]"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 200,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(mummy@ZombieTypes)",
+              "RTID(mummy_armor1@ZombieTypes)",
+              "RTID(mummy_armor2@ZombieTypes)",
+              "RTID(mummy_armor4@ZombieTypes)",
+              "RTID(egypt_gargantuar@ZombieTypes)",
+              "RTID(camel_threehump@ZombieTypes)",
+              "RTID(camel_onehump@ZombieTypes)",
+              "RTID(camel_twohump@ZombieTypes)",
+              "RTID(camel_manyhump@ZombieTypes)",
+              "RTID(explorer@ZombieTypes)",
+              "RTID(explorer_veteran@ZombieTypes)",
+              "RTID(tomb_raiser@ZombieTypes)",
+              "RTID(pharaoh@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 300,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(mummy@ZombieTypes)",
+              "RTID(mummy_armor1@ZombieTypes)",
+              "RTID(mummy_armor2@ZombieTypes)",
+              "RTID(mummy_armor4@ZombieTypes)",
+              "RTID(egypt_gargantuar@ZombieTypes)",
+              "RTID(camel_threehump@ZombieTypes)",
+              "RTID(camel_onehump@ZombieTypes)",
+              "RTID(camel_twohump@ZombieTypes)",
+              "RTID(camel_manyhump@ZombieTypes)",
+              "RTID(explorer@ZombieTypes)",
+              "RTID(explorer_veteran@ZombieTypes)",
+              "RTID(tomb_raiser@ZombieTypes)",
+              "RTID(pharaoh@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 150,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(mummy@ZombieTypes)",
+              "RTID(mummy_armor1@ZombieTypes)",
+              "RTID(mummy_armor2@ZombieTypes)",
+              "RTID(mummy_armor4@ZombieTypes)",
+              "RTID(egypt_gargantuar@ZombieTypes)",
+              "RTID(camel_threehump@ZombieTypes)",
+              "RTID(camel_onehump@ZombieTypes)",
+              "RTID(camel_twohump@ZombieTypes)",
+              "RTID(camel_manyhump@ZombieTypes)",
+              "RTID(explorer@ZombieTypes)",
+              "RTID(explorer_veteran@ZombieTypes)",
+              "RTID(tomb_raiser@ZombieTypes)",
+              "RTID(pharaoh@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 200,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(mummy@ZombieTypes)",
+              "RTID(mummy_armor1@ZombieTypes)",
+              "RTID(mummy_armor2@ZombieTypes)",
+              "RTID(mummy_armor4@ZombieTypes)",
+              "RTID(egypt_gargantuar@ZombieTypes)",
+              "RTID(camel_threehump@ZombieTypes)",
+              "RTID(camel_onehump@ZombieTypes)",
+              "RTID(camel_twohump@ZombieTypes)",
+              "RTID(camel_manyhump@ZombieTypes)",
+              "RTID(explorer@ZombieTypes)",
+              "RTID(explorer_veteran@ZombieTypes)",
+              "RTID(tomb_raiser@ZombieTypes)",
+              "RTID(pharaoh@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 8,
+        "WaveCount": 32,
+        "Waves": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  ],
+  "version": 1
+}
