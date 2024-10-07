@@ -1,5 +1,8 @@
 {
     "official": {
+        "LMYY-Sample": {
+            "location": "/official/LMYY-Sample/links.json"
+        },
         "PaulLiu": {
             "location": "/official/PaulLiu/links.json"
         }

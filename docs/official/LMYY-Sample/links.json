@@ -1,0 +1,8 @@
+{
+    "Author": "LMYY-Sample",
+    "AuthorInfo": "This is a sample level written by LMYY.",
+    "levelList": [
+        "SampleLevel_I.json",
+        "SampleLevel_II.json5"
+    ]
+}
