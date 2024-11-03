@@ -2,9 +2,13 @@
   '#comment': 'Sample Level(JSON5)',
   Information: {
     uuid: 'c58a208a-a5e3-4cfa-9bc3-cc7fbb08c2e3',
+    name: 'Sample Level II(JSON5)',
     Author: 'LMYY',
     AuthorLink: 'https://github.com/Gzh0821',
-    Introduction: 'A level that is easy to play, but hard to win.',
+    Introduction: {
+      en: 'A level that is easy to play, but hard to win.',
+      zh: '一个容易玩，但难以获胜的关卡。'
+    },
     Version: '1.0',
     CreatedAt: '2022-03-08',
     UpdatedAt: '2022-03-08',
