@@ -1,6 +1,6 @@
 {
-    "Author": "PaulLiu",
-    "AuthorInfo": "Official levels Madeby PaulLiu",
+    "author": "PaulLiu",
+    "authorInfo": "Official levels Madeby PaulLiu",
     "levelList": [
         "Banktheft_I.JSON",
         "Banktheft_II.JSON",
