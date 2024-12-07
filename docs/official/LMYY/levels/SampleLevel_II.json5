@@ -10,7 +10,7 @@
     AuthorLink: 'https://github.com/Gzh0821',
     Introduction: {
       en: 'A level that is easy to play, but hard to win.',
-      zh: '一个容易玩，但难以获胜的关卡。'
+      'zh-CN': '一个容易玩，但难以获胜的关卡。'
     },
     GameVersion: '0.1.13',
     Version: '1.0',
