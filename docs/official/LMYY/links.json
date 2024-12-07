@@ -1,0 +1,46 @@
+{
+    "author": "LMYY",
+    "authorInfo": "Official Developer of PvZ-GE",
+    "levelList": [
+        {
+            "fileName": "SampleLevel_I.json",
+            "Information": {
+                "uuid": "c58a208a-a5e3-4cfa-9bc3-cc7fbb08c2e3",
+                "name": {
+                    "en": "SampleLevel I",
+                    "zh-CN": "示例关卡1"
+                },
+                "Introduction": {
+                    "en": "This is a sample level.",
+                    "zh-CN": "这是一个示例关卡。"
+                },
+                "GameVersion": "0.1.1",
+                "Version": "1.0",
+                "CreatedAt": "2024-08-08",
+                "UpdatedAt": "2024-08-08",
+                "Difficulty": "Easy",
+                "Category": "Survival"
+            }
+        },
+        {
+            "fileName": "SampleLevel_II.json5",
+            "Information": {
+                "uuid": "5a81c651-6f13-482f-a70e-0fbec5508a40",
+                "name": {
+                    "en": "SampleLevel II(JSON5)",
+                    "zh-CN": "示例关卡2-JSON5"
+                },
+                "Introduction": {
+                    "en": "This is a sample level written by LMYY with JSON5 format.",
+                    "zh-CN": "这是一个JSON5格式的示例关卡。"
+                },
+                "GameVersion": "0.1.1",
+                "Version": "1.0",
+                "CreatedAt": "2024-08-08",
+                "UpdatedAt": "2024-08-08",
+                "Difficulty": "Easy",
+                "Category": "Survival"
+            }
+        }
+    ]
+}

@@ -9,6 +9,7 @@
             "en": "This is a sample level.",
             "zh-CN": "这是一个示例关卡。"
         },
+        "GameVersion": "0.1.13",
         "Version": "1.0",
         "CreatedAt": "2022-03-08",
         "UpdatedAt": "2022-03-08",
