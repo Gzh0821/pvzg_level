@@ -2,7 +2,10 @@
     "#comment": "Sample Level",
     "Information": {
         "uuid": "c58a208a-a5e3-4cfa-9bc3-cc7fbb08c2e3",
-        "name": "SampleLevel I",
+        "name": {
+            "en": "SampleLevel I",
+            "zh-CN": "示例关卡1"
+        },
         "Author": "LMYY",
         "AuthorLink": "https://github.com/Gzh0821",
         "Introduction": {
