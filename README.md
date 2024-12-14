@@ -99,7 +99,7 @@ but it must be in `.json` or `.json5` format.
 
 In your `links.json`, fill in the level information, such as file name, etc.
 
-### 4. Submit changes and initiate a Pull Request
+### 4. Submit changes
 
 After you have completed the configuration, you can submit your changes and initiate a Pull Request.
 
@@ -125,7 +125,9 @@ Push local changes to your own GitHub repository:
 git push origin master
 ```
 
-Then,go to your GitHub repository page.
+### 5. Initiate a Pull Request
+
+Then, go to your GitHub repository page.
 
 - Click the `Compare & pull request` button at the top of the page.
 - Fill in the description of the changes and submit a Pull Request.
