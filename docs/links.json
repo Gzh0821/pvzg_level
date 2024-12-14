@@ -7,5 +7,9 @@
             "location": "/official/PaulLiu/links.json"
         }
     },
-    "custom": {}
+    "custom": {
+        "example":{
+            "location": "/custom/example/links.json"
+        }
+    }
 }

@@ -1,0 +1,26 @@
+{
+    "author": "example",
+    "authorInfo": "This is a example of custom links.",
+    "levelList": [
+        {
+            "fileName": "SampleLevel_I.json",
+            "Information": {
+                "uuid": "c58a208a-a5e3-4cfa-9bc3-cc7fbb08c2e3",
+                "name": {
+                    "en": "SampleLevel I",
+                    "zh-CN": "示例关卡1"
+                },
+                "Introduction": {
+                    "en": "This is a sample level.",
+                    "zh-CN": "这是一个示例关卡。"
+                },
+                "GameVersion": "0.1.1",
+                "Version": "1.0",
+                "CreatedAt": "2024-08-08",
+                "UpdatedAt": "2024-08-08",
+                "Difficulty": "Easy",
+                "Category": "Survival"
+            }
+        }
+    ]
+}
