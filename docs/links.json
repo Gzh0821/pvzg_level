@@ -10,6 +10,9 @@
     "custom": {
         "example":{
             "location": "/custom/example/links.json"
+        },
+        "(Un)funny Guy":{
+            "location": "/custom/(Un)funny Guy/links.json"
         }
     }
 }

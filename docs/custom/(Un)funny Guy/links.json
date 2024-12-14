@@ -1,0 +1,59 @@
+{
+    "author": "(Un)funny Guy",
+    "authorInfo": "~",
+    "levelList": [
+        {
+            "fileName": "Endless Garden Trial V.json",
+            "Information": {
+                "uuid": "90d70ca0-6d6f-45a1-92ba-5f37e1237658",
+                "name": {
+                    "en": "Endless Garden Trial V",
+                    "zh-CN": "无尽花园试炼 V"
+                },
+                "Introduction": {
+                    "en": "Level where most zombies can spawn in a random order.",
+                    "zh-CN": "大多数僵尸可以按随机顺序生成的关卡。"
+                },
+                "GameVersion": "0.1.13",
+                "Version": "1.0",
+                "CreatedAt": "2024-12-14",
+                "UpdatedAt": "2024-12-14",
+                "Difficulty": "Hard",
+                "Category": "Survival"
+            }
+        },
+        {
+            "fileName": "Assassination_On_The_Railway.json",
+            "Information": {
+                "uuid": "c1c238b1-ae83-48b2-a32a-5ee8b1a76a3c",
+                "name": "Assassination On The Railway",
+                "Author": "(Un)funny Guy",
+                "AuthorLink": "https://www.youtube.com/@guygaming643/featured",
+                "Introduction": {
+                "en": "A level inspired by Blue Mr Gutsy's level: Attack on the Railway"
+                },
+                "Version": "1.3",
+                "CreatedAt": "2024-09-28",
+                "UpdatedAt": "2024-19-11",
+                "Difficulty": "Hard",
+                "Category": "Survival"
+            }
+        },
+        {   "fileName": "Test_Of_Control.json",
+            "Information": {
+                "uuid": "edb34627-ad4c-4c00-81cf-f6d73cbbd9fe",
+                "name": "Test Of Control",
+                "Author": "(Un)funny Guy",
+                "AuthorLink": "https://www.youtube.com/@guygaming643/featured",
+                "Introduction": {
+                "en": "A level inspired by a nighttime ae eclise level with a similar concept"
+                },
+                "Version": "1.2",
+                "CreatedAt": "2024-09-25",
+                "UpdatedAt": "2024-09-11",
+                "Difficulty": "Hard",
+                "Category": "Survival"
+        }
+        }
+        ]
+}
