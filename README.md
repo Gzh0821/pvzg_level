@@ -98,3 +98,36 @@ Create a new `levels` in your personal configuration folder directory and upload
 but it must be in `.json` or `.json5` format.
 
 In your `links.json`, fill in the level information, such as file name, etc.
+
+### 4. Submit changes and initiate a Pull Request
+
+After you have completed the configuration, you can submit your changes and initiate a Pull Request.
+
+We recommend that you use VScode to submit. Just fill in the submission information in Source Control on the left side of VScode, then click Submit, and click Synchronize Changes.
+
+To submit using the terminal:
+
+- Add the modified code to Git:
+
+```bash
+git add .
+```
+
+- Submit the changes:
+
+```bash
+git commit -m "Describe your changes"
+```
+
+Push local changes to your own GitHub repository:
+
+```bash
+git push origin master
+```
+
+Then,go to your GitHub repository page.
+
+- Click the `Compare & pull request` button at the top of the page.
+- Fill in the description of the changes and submit a Pull Request.
+
+We will review your Pull Request as soon as possible and provide feedback or merge as needed.
