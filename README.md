@@ -17,20 +17,70 @@ Visit our [website](https://pvzge.com/en/) for download links, game guides and m
 
 访问我们的[网站](https://pvzge.com)获取下载链接、游戏指南等。您还可以在网站的反馈模块或本项目的问题和讨论中报告错误、发表评论和建议！
 
-## 如何贡献关卡
+## How to contribute to levels
 
-请 `fork` 本仓库，然后修改你的配置和上传关卡文件，最后提交 `pull request` 到本仓库。
-所有配置和关卡文件均在本仓库的 `docs` 目录下。
+Please `fork` this repository, then modify your configuration and upload the level file, and finally submit a `pull request` to this repository.
 
-### 1.创建个人配置
+All configuration and level files are in the `docs` directory of this repository. You can refer to the format of the files in `official`.
 
-在 `docs` 的 `custom` 目录下，创建一个以你的昵称命名的文件夹，并在其中新建一个 `links.json` 文件。
+### 1. Create a personal configuration
 
-注：不要在 `custom` 目录下直接上传或创建文件。
+In the `custom` directory of `docs`, create a folder named after your nickname and create a `links.json` file in it with the content similar to:
 
-### 2.绑定个人配置
+```json
+{
+  "author": "example",
+  "authorInfo": "This is a example of custom links.",
+  "levelList": [
+    {
+      "fileName": "SampleLevel_I.json",
+      "Information": {
+        "uuid": "c58a208a-a5e3-4cfa-9bc3-cc7fbb08c2e3",
+        "name": {
+          "en": "SampleLevel I",
+          "zh-CN": "Sample Level 1"
+        },
+        "Introduction": {
+          "en": "This is a sample level.",
+          "zh-CN": "This is a sample level."
+        },
+        "GameVersion": "0.1.1",
+        "Version": "1.0",
+        "CreatedAt": "2024-08-08",
+        "UpdatedAt": "2024-08-08",
+        "Difficulty": "Easy",
+        "Category": "Survival"
+      }
+    },
+    {
+      "fileName": "MyLevel.json",
+      "Information": {
+        "uuid": "3e318b10-36f3-49c0-b01c-ad6842521d93",
+        "name": {
+          "en": "MyLevel",
+          "zh-CN": "My Level"
+        },
+        "Introduction": {
+          "en": "This is my level.",
+          "zh-CN": "This is my level. "
+        },
+        "GameVersion": "0.1.1",
+        "Version": "1.0",
+        "CreatedAt": "2024-08-08",
+        "UpdatedAt": "2024-08-08",
+        "Difficulty": "Normal",
+        "Category": "Survival"
+      }
+    }
+  ]
+}
+```
 
-打开 `docs` 目录的 `links.json` 文件，在 `custom` 一栏中，填写你的昵称和个人配置的位置，类似于：
+Note: Do not upload or create files directly in the `custom` directory.
+
+### 2. Bind personal configuration
+
+Open the `links.json` file in the `docs` directory, and fill in your nickname and the location of your personal configuration in the `custom` column, similar to:
 
 ```json
 {
@@ -41,3 +91,10 @@ Visit our [website](https://pvzge.com/en/) for download links, game guides and m
   }
 }
 ```
+
+### 3. Upload level files
+
+Create a new `levels` in your personal configuration folder directory and upload your level file. The file name can be customized (cannot include spaces or special symbols except `_`),
+but it must be in `.json` or `.json5` format.
+
+In your `links.json`, fill in the level information, such as file name, etc.
