@@ -3,7 +3,7 @@
     "authorInfo": "~",
     "levelList": [
         {
-            "fileName": "Endless Garden Trial V.json",
+            "fileName": "Endless_Garden_Trial_V.json5",
             "Information": {
                 "uuid": "90d70ca0-6d6f-45a1-92ba-5f37e1237658",
                 "name": {
@@ -23,7 +23,7 @@
             }
         },
         {
-            "fileName": "Assassination_On_The_Railway.json",
+            "fileName": "Assassination_On_The_Railway.json5",
             "Information": {
                 "uuid": "c1c238b1-ae83-48b2-a32a-5ee8b1a76a3c",
                 "name": "Assassination On The Railway",
@@ -39,7 +39,7 @@
                 "Category": "Survival"
             }
         },
-        {   "fileName": "Test_Of_Control.json",
+        {   "fileName": "Test_Of_Control.json5",
             "Information": {
                 "uuid": "edb34627-ad4c-4c00-81cf-f6d73cbbd9fe",
                 "name": "Test Of Control",
