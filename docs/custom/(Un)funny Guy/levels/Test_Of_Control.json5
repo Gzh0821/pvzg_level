@@ -1,0 +1,598 @@
+{
+    "#comment": "Sample Level",
+    "Information": {
+    "uuid": "edb34627-ad4c-4c00-81cf-f6d73cbbd9fe",
+    "name": "Test Of Control",
+    "Author": "(Un)funny Guy",
+    "AuthorLink": "https://www.youtube.com/@guygaming643/featured",
+    "Introduction": {
+      "en": "A level inspired by a nighttime ae eclise level with a similar concept",
+    },
+    "Version": "1.2", //1.1 fixed the level being broken for newer versions, 1.2 updated the information part
+    "CreatedAt": "2024-09-25",
+    "UpdatedAt": "2024-09-11",
+    "Difficulty": "Hard",
+    "Category": "Survival"
+  },
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "~",
+                "LevelNumber": 1,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(SeedBank@CurrentLevel)"
+                ],
+                "Name": "Test Of Control",
+                "WritenBy": "(Un)funny Guy",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(WestStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 10,
+                "WaveCount": 20,
+                "SuppressFlagZombie": false,
+                "MinNextWaveHealthPercentage": 0.45,
+                "MaxNextWaveHealthPercentage": 0.45,
+                "ZombieCountdownFirstWaveSecs": 10,
+                "ZombieCountdownHugeWaveDelay": 10,
+                "Waves": [
+                    [ "RTID(Wave1@CurrentLevel)" ],
+                    [ "RTID(Wave2@CurrentLevel)" ],
+                    [ "RTID(Wave3@CurrentLevel)" ],
+                    [ "RTID(Wave4@CurrentLevel)" ],
+                    [ "RTID(Wave5@CurrentLevel)" ],
+                    [ "RTID(Wave6@CurrentLevel)" ],
+                    [ "RTID(Wave7@CurrentLevel)" ],
+                    [ "RTID(Wave8@CurrentLevel)" ],
+                    [ "RTID(Wave9@CurrentLevel)" ],
+                    [ "RTID(Wave10@CurrentLevel)" ],
+                    [ "RTID(Wave11@CurrentLevel)" ],
+                    [ "RTID(Wave12@CurrentLevel)" ],
+                    [ "RTID(Wave13@CurrentLevel)" ],
+                    [ "RTID(Wave14@CurrentLevel)" ],
+                    [ "RTID(Wave15@CurrentLevel)" ],
+                    [ "RTID(Wave16@CurrentLevel)" ],
+                    [ "RTID(Wave17@CurrentLevel)" ],
+                    [ "RTID(Wave18@CurrentLevel)" ],
+                    [ "RTID(Wave19@CurrentLevel)" ],
+                    [ "RTID(Wave20@CurrentLevel)" ]
+                ]
+            }
+        },
+        {
+            "aliases": [ "Wave1" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(kongfu_torch@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave2" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave3" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(swashbuckler@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(swashbuckler@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave4" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave5" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave6" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave7" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave8" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(explorer@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave9" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave10" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave11" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(explorer@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" },
+                    { "Type": "RTID(future_jetpack@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave12" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave13" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave14" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave15" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(monk_torch@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" },
+                    { "Type": "RTID(explorer_veteran@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave16" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" },
+                    { "Type": "RTID(west_bull@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave17" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(prospector@ZombieTypes)" },
+                    { "Type": "RTID(prospector@ZombieTypes)" },
+                    { "Type": "RTID(prospector@ZombieTypes)" },
+                    { "Type": "RTID(prospector@ZombieTypes)" },
+                    { "Type": "RTID(prospector@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" },
+                    { "Type": "RTID(swashbuckler@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave18" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave19" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    },
+                    { "Type": "RTID(tutorial_armor4@ZombieTypes)" },
+                    { "Type": "RTID(tutorial_armor4@ZombieTypes)" },
+                    { "Type": "RTID(tutorial_armor4@ZombieTypes)" },
+                    { "Type": "RTID(tutorial_armor4@ZombieTypes)" },
+                    { "Type": "RTID(tutorial_armor4@ZombieTypes)" }
+                ]
+            }
+        },
+
+        {
+            "aliases": [ "Wave20" ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(prospector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(explorer_veteran@ZombieTypes)"
+                    },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(catapult@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(lostcity_relichunter@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" },
+                    { "Type": "RTID(west_bull_veteran@ZombieTypes)" }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

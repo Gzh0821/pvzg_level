@@ -1,0 +1,31 @@
+{
+    "author": "(Un)funny Guy",
+    "authorInfo": "~",
+    "levelList": [
+        {
+            "fileName": "Endless Garden Trial V.json",
+            "Information": {
+                "uuid": "90d70ca0-6d6f-45a1-92ba-5f37e1237658",
+                "name": {
+                    "en": "Endless Garden Trial V",
+                    "zh-CN": "无尽花园试炼 V"
+                },
+                "Introduction": {
+                    "en": "Level where most zombies can spawn in a random order.",
+                    "zh-CN": "大多数僵尸可以按随机顺序生成的关卡。"
+                },
+                "GameVersion": "0.1.13",
+                "Version": "1.0",
+                "CreatedAt": "2024-12-14",
+                "UpdatedAt": "2024-12-14",
+                "Difficulty": "Hard",
+                "Category": "Survival"
+            }
+        }
+        ],
+        "custom": {
+        "YourName": {
+            "location": "custom/guygaming647/links.json"
+        }
+        }
+}

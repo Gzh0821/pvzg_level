@@ -1,0 +1,288 @@
+{"#comment": "My Level | ELM: Ver-10.2 [VNL v9.8]",
+"#zombies": "explorer_veteran, west_bull_veteran, kongfu_hammer, kongfu_torch, monk_torch, lostcity_relichunter, prospector, cannon, egypt_gargantuar",
+"Information": {
+    "uuid": "c1c238b1-ae83-48b2-a32a-5ee8b1a76a3c",
+    "name": "Assassination On The Railway",
+    "Author": "(Un)funny Guy",
+    "AuthorLink": "https://www.youtube.com/@guygaming643/featured",
+    "Introduction": {
+      "en": "A level inspired by Blue Mr Gutsy's level: Attack on the Railway",
+    },
+    "Version": "1.3", //1.1 fixed the level being broken for newer versions, 1.2 updated the information part, 1.3 fixed the level again for being broken in newer vers
+    "CreatedAt": "2024-09-28",
+    "UpdatedAt": "2024-19-11",
+    "Difficulty": "Hard",
+    "Category": "Survival"
+  },
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "Description": "~",
+    "LevelNumber": 1,
+    "StartingSun": 50,
+    "Description": "Custom Level",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "Modules": [
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(IPP_Protect@CurrentLevel)",
+        "RTID(Rails@CurrentLevel)",
+        "RTID(SeedBank@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(InitialTide@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "Name": "Assassination On The Railway",
+    "WritenBy": "(Un)funny Guy",
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "StageModule": "RTID(BeachStage@LevelModules)"
+}},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "PlantExcludeList": [
+        "shootingstarfruit",
+        "gloomvine",
+        "lilypad",
+        "pvine",
+        "floawerPot",
+        "pumpkin"
+    ],
+    "SelectionMethod": "chooser"
+}
+},
+{"aliases":["IPP_Protect"],
+"objclass": "ProtectThePlantChallengeProperties",
+"objdata": {
+    "Plants": [
+        {"GridX": 4, "GridY": 2, "Level": 0, "PlantType":"primalpotatomine"}
+    ], 
+    "MustProtectCount": 1
+}},
+{"aliases": ["Rails"],
+"objclass": "RailcartProperties",
+"objdata": {
+    "RailcartType": "railcart_cowboy",
+        "Railcarts": [
+            {"Column": 4, "Row": 2}
+        ],
+        "Rails": [
+                    {
+          "Column": 4,
+          "RowEnd": 4,
+          "RowStart": 0
+        }
+        ]
+}},
+{"aliases": ["InitialTide"],
+"objclass": "TideProperties",
+"objdata": {
+    "StartingWaveLocation": 4,
+    "ShowTideMarker": false
+}},
+{
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 10,
+    "WaveCount": 10,
+    "SuppressFlagZombie": false,
+    "Waves": [
+        ["RTID(Wave1@CurrentLevel)"],
+        ["RTID(Wave2@CurrentLevel)"],
+        ["RTID(Wave3@CurrentLevel)"],
+        ["RTID(Wave4@CurrentLevel)"],
+        ["RTID(Wave5@CurrentLevel)"],
+        ["RTID(Wave6@CurrentLevel)"],
+        ["RTID(Wave7@CurrentLevel)"],
+        ["RTID(Wave8@CurrentLevel)"],
+        ["RTID(Wave9@CurrentLevel)"],
+        ["RTID(Wave10@CurrentLevel)","RTID(Sandstorm10_C4@CurrentLevel)", "RTID(Sandstorm10_C5@CurrentLevel)"]
+    ]
+}},
+{"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(prospector@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(prospector@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Type": "RTID(west_bull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(kongfu_hammer@ZombieTypes)"},
+        {"Type": "RTID(kongfu_hammer@ZombieTypes)"},
+        {"Type": "RTID(kongfu_hammer@ZombieTypes)"},
+        {"Type": "RTID(kongfu_hammer@ZombieTypes)"},
+        {"Type": "RTID(kongfu_hammer@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(explorer_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(cannon@ZombieTypes)"},
+        {"Type": "RTID(cannon@ZombieTypes)"},
+        {"Type": "RTID(cannon@ZombieTypes)"},
+        {"Type": "RTID(cannon@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Type": "RTID(kongfu_torch@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(kongfu_torch@ZombieTypes)"},
+        {"Type": "RTID(kongfu_torch@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(explorer_veteran@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"},
+        {"Type": "RTID(monk_torch@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(west_bull_veteran@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(west_bull_veteran@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(egypt_gargantuar@ZombieTypes)"}
+    ]
+}
+},
+{"aliases":["Sandstorm10_C4"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 4,
+    "ColumnEnd": 4,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(egypt_gargantuar@ZombieTypes)"},
+        {"Type": "RTID(egypt_gargantuar@ZombieTypes)"}
+    ]
+}},
+{"aliases":["Sandstorm10_C5"],
+"objclass": "StormZombieSpawnerProps",
+"objdata": {
+    "AdditionalPlantfood": "0",
+    "Type": "sandstorm",
+    "ColumnStart": 5,
+    "ColumnEnd": 5,
+    "TimeBetweenGroups": 0.5,
+    "GroupSize": 1,
+    "Zombies": [
+        {"Type": "RTID(egypt_gargantuar@ZombieTypes)"}
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

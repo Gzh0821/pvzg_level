@@ -1,0 +1,313 @@
+{
+  "Information": {
+    "name": "Endless Garden Trial IV",
+    "note": "//flags and rallys cant spawn, parrot can spawn but never targets",
+    "Author": "(Un)funny guy"
+  },
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "~",
+        "LevelNumber": 1,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(IPP@CurrentLevel)",
+        "RTID(Rails@CurrentLevel)",
+        "RTID(SeedBank@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(Gravestones@CurrentLevel)",
+        "RTID(SunBombs@CurrentLevel)",
+        "RTID(ChallengeModule@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(InitialTide@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+        ],
+        "Name": "Endless Garden Trial V",
+        "NameMultiLanguage": {
+          "en": "Endless Garden Trial V",
+          "zh": "Endless Garden Trial V"
+        },
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(ModernStage@LevelModules)",
+        "MusicType": "MiniGame_A"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser"
+      }
+    },
+{"aliases": ["SunBombs"],
+"objclass": "SunBombChallengeProperties",
+"objdata": {
+    "PlantBombExplosionRadius": 25,
+    "PlantDamage": 1000,
+    "ZombieBombExplosionRadius": 80,
+    "ZombieDamage": 500
+}},
+{"aliases":["ChallengeModule"],
+"objclass": "StarChallengeModuleProperties",
+"objdata": {
+    "Challenges": [
+        [
+        "RTID(BeatTheLevel@CurrentLevel)",
+        "RTID(SunUsed@CurrentLevel)",
+        "RTID(SunProduced@CurrentLevel)",
+        "RTID(SunHoldout@CurrentLevel)",
+        "RTID(PlantsLost@CurrentLevel)",
+        "RTID(SimultaneousPlants@CurrentLevel)",
+        "RTID(MoldColonies@CurrentLevel)"
+    ]
+    ],
+    "ChallengesAlwaysAvailable": true
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Descriptions": [
+    "Survive the undying horrors of the Endless Garden Trial!",
+    "Made by unfunnyguy. on discord"
+    ] 
+}},
+{"aliases":["SunUsed"],
+"objclass": "StarChallengeSunUsedProps",
+"objdata": { "MaximumSun": 1000000 }
+},
+{
+"aliases": [
+  "Gravestones"
+],
+"objclass": "GravestoneProperties",
+"objdata": {
+  "GravestoneCount": 20,
+  "SpawnColumnEnd": 9,
+  "SpawnColumnStart": 7
+}
+},
+{"aliases":["SunProduced"],
+"objclass": "StarChallengeSunProducedProps",
+"objdata": { "TargetSun": 5000 }
+},
+{"aliases":["SunHoldout"],
+"objclass": "StarChallengeSpendSunHoldoutProps",
+"objdata": { "HoldoutSeconds": 5 }
+},
+{"aliases":["PlantsLost"],
+"objclass": "StarChallengePlantsLostProps",
+"objdata": { "MaximumPlantsLost": 950 }
+},
+{"aliases": ["SimultaneousPlants"],
+"objclass": "StarChallengeSimultaneousPlantsProps",
+"objdata": { "MaximumPlants": 350 }
+},
+{"aliases":["MoldColonies"],
+"objclass": "MoldColonyChallengeProps",
+"objdata": { "Locations": "RTID(Mold@CurrentLevel)" }
+},
+{"aliases": ["Mold"],
+"objclass": "BoardGridMapProps",
+"objdata": {
+    "Values": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1]
+    ]
+}},
+{"aliases":["IPP"],
+"objclass": "InitialPlantProperties",
+"objdata": {
+    "InitialPlantPlacements": [
+        {"GridX": 1, "GridY": 0, "Level": -1, "TypeName":"powerplant"},
+        {"GridX": 2, "GridY": 0, "Level": -1, "TypeName":"powerplant"},
+        {"GridX": 1, "GridY": 1, "Level": -1, "TypeName":"powerplant_delta"},
+        {"GridX": 2, "GridY": 1, "Level": -1, "TypeName":"powerplant_delta"},
+        {"GridX": 1, "GridY": 2, "Level": -1, "TypeName":"powerplant_gamma"},
+        {"GridX": 2, "GridY": 2, "Level": -1, "TypeName":"powerplant_gamma"},
+        {"GridX": 1, "GridY": 3, "Level": -1, "TypeName":"powerplant_beta"},
+        {"GridX": 2, "GridY": 3, "Level": -1, "TypeName":"powerplant_beta"},
+        {"GridX": 1, "GridY": 4, "Level": -1, "TypeName":"powerplant_alpha"},
+        {"GridX": 2, "GridY": 4, "Level": -1, "TypeName":"powerplant_alpha"}
+    ]
+}},
+{"aliases": ["Rails"],
+"objclass": "RailcartProperties",
+"objdata": {
+    "RailcartType": "",
+        "Railcarts": [
+            {"Column": 0, "Row": 2}
+        ],
+        "Rails": [
+            {"Column": 0, "RowEnd": 4, "RowStart": 0}
+        ]
+}},
+{"aliases": ["InitialTide"],
+"objclass": "TideProperties",
+"objdata": {
+    "StartingWaveLocation": 4,
+    "ShowTideMarker": false
+    }},
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 100,
+            "StartingWave": 1,
+            "ZombiePool": [ 
+              "RTID(tutorial@ZombieTypes)",
+              "RTID(tutorial_armor1@ZombieTypes)",
+              "RTID(tutorial_armor2@ZombieTypes)",
+              "RTID(tutorial_armor4@ZombieTypes)",
+              "RTID(tutorial_imp@ZombieTypes)",
+              "RTID(tutorial_gargantuar@ZombieTypes)",
+              "RTID(bobsled@ZombieTypes)",
+              "RTID(bobsled_team@ZombieTypes)",
+              "RTID(tutorial_balloon@ZombieTypes)",
+              "RTID(allstar@ZombieTypes)",
+              "RTID(sleighcart@ZombieTypes)",
+              "RTID(catapult@ZombieTypes)",
+              "RTID(mummy@ZombieTypes)",
+              "RTID(mummy_armor1@ZombieTypes)",
+              "RTID(mummy_armor2@ZombieTypes)",
+              "RTID(mummy_armor4@ZombieTypes)",
+              "RTID(ra@ZombieTypes)",
+              "RTID(camel_segment@ZombieTypes)",
+              "RTID(camel_onehump@ZombieTypes)",
+              "RTID(camel_twohump@ZombieTypes)",
+              "RTID(camel_threehump@ZombieTypes)",
+              "RTID(camel_manyhump@ZombieTypes)",
+              "RTID(camel_segment_touch@ZombieTypes)",
+              "RTID(camel_onehump_touch@ZombieTypes)",
+              "RTID(camel_twohump_touch@ZombieTypes)",
+              "RTID(camel_threehump_touch@ZombieTypes)",
+              "RTID(camel_manyhump_touch@ZombieTypes)",
+              "RTID(explorer@ZombieTypes)",
+              "RTID(explorer_veteran@ZombieTypes)",
+              "RTID(tomb_raiser@ZombieTypes)",
+              "RTID(pharaoh@ZombieTypes)",
+              "RTID(pharaoh_weak@ZombieTypes)",
+              "RTID(egypt_imp@ZombieTypes)",
+              "RTID(egypt_gargantuar@ZombieTypes)",
+              "RTID(pirate@ZombieTypes)",
+              "RTID(pirate_armor1@ZombieTypes)",
+              "RTID(pirate_armor2@ZombieTypes)",
+              "RTID(pirate_armor4@ZombieTypes)",
+              "RTID(swashbuckler@ZombieTypes)",
+              "RTID(seagull@ZombieTypes)",
+              "RTID(pelican@ZombieTypes)",
+              "RTID(barrelroller@ZombieTypes)",
+              "RTID(pirate_barrel@ZombieTypes)",
+              "RTID(cannon@ZombieTypes)",
+              "RTID(pirate_captain_parrot@ZombieTypes)",
+              "RTID(pirate_imp@ZombieTypes)",
+              "RTID(pirate_gargantuar@ZombieTypes)",
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)",
+              "RTID(prospector@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(poncho_no_plate@ZombieTypes)",
+              "RTID(poncho_plate@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(chicken@ZombieTypes)",
+              "RTID(chicken_pumpkin@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(west_bullrider@ZombieTypes)",
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(kongfu@ZombieTypes)",
+              "RTID(kongfu_armor1@ZombieTypes)",
+              "RTID(kongfu_armor2@ZombieTypes)",
+              "RTID(kongfu_armor3@ZombieTypes)",
+              "RTID(kongfu_hammer@ZombieTypes)",
+              "RTID(kongfu_torch@ZombieTypes)",
+              "RTID(kongfu_chi@ZombieTypes)",
+              "RTID(monk@ZombieTypes)",
+              "RTID(monk_armor1@ZombieTypes)",
+              "RTID(monk_armor2@ZombieTypes)",
+              "RTID(monk_armor3@ZombieTypes)",
+              "RTID(monk_blade@ZombieTypes)",
+              "RTID(monk_nunchaku@ZombieTypes)",
+              "RTID(monk_torch@ZombieTypes)",
+              "RTID(future@ZombieTypes)",
+              "RTID(future_armor1@ZombieTypes)",
+              "RTID(future_armor2@ZombieTypes)",
+              "RTID(future_armor4@ZombieTypes)",
+              "RTID(future_jetpack@ZombieTypes)",
+              "RTID(future_jetpack_veteran@ZombieTypes)",
+              "RTID(future_jetpack_disco@ZombieTypes)",
+              "RTID(future_protector@ZombieTypes)",
+              "RTID(mech_cone@ZombieTypes)",
+              "RTID(football_mech@ZombieTypes)",
+              "RTID(disco_mech@ZombieTypes)",
+              "RTID(future_imp@ZombieTypes)",
+              "RTID(future_gargantuar@ZombieTypes)",
+              "RTID(dark@ZombieTypes)",
+              "RTID(dark_armor1@ZombieTypes)",
+              "RTID(dark_armor2@ZombieTypes)",
+              "RTID(dark_armor3@ZombieTypes)",
+              "RTID(dark_armor4@ZombieTypes)",
+              "RTID(dark_juggler@ZombieTypes)",
+              "RTID(dark_wizard@ZombieTypes)",
+              "RTID(dark_wizard_veteran@ZombieTypes)",
+              "RTID(dark_king@ZombieTypes)",
+              "RTID(dark_king_veteran@ZombieTypes)",
+              "RTID(dark_imp_dragon@ZombieTypes)",
+              "RTID(dark_imp@ZombieTypes)",
+              "RTID(dark_gargantuar@ZombieTypes)",
+              "RTID(lostcity_relichunter@ZombieTypes)",
+              "RTID(sky@ZombieTypes)",
+              "RTID(sky_armor1@ZombieTypes)",
+              "RTID(sky_armor2@ZombieTypes)",
+              "RTID(beach@ZombieTypes)",
+              "RTID(beach_armor1@ZombieTypes)",
+              "RTID(beach_armor2@ZombieTypes)",
+              "RTID(beach_fem@ZombieTypes)",
+              "RTID(beach_fem_armor1@ZombieTypes)",
+              "RTID(beach_fem_armor2@ZombieTypes)",
+              "RTID(beach_imp@ZombieTypes)",
+              "RTID(beach_gargantuar@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 10,
+        "WaveCount": 100,
+        "Waves": [
+          [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]
+        ]
+      }
+    }
+  ],
+  "version": 1
+}
