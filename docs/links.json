@@ -11,7 +11,7 @@
         "example":{
             "location": "/custom/example/links.json"
         },
-        "(Un)funny Guy":{
+        "UnfunnyGuy":{
             "location": "/custom/UnfunnyGuy/links.json"
         }
     }
