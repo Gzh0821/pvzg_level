@@ -1,0 +1,381 @@
+{
+  // Ice's Example Level by IceandFire04
+  // IceandFire04 的示例级别（作者：IceandFire04）
+
+  Information: {
+    uuid: "dffbcb3d-2f80-41e9-8959-800e79750393",
+    Author: "IceandFire04",
+    AuthorLink: "https://github.com/MrNooberDude",
+    Introduction: "Template level utilizing custom level modules that I found really fun",
+    Version: "1.0",
+    CreatedAt: "2024-12-28",
+    UpdatedAt: "2024-12-28",
+    Difficulty: "Hard",
+    Category: "Survival",
+  },
+  objects: [
+    {
+      // Info
+      objclass: "LevelDefinition",
+      objdata: {
+        Description: "Epic Level of Awesome Sauce",
+        LevelNumber: 1,
+        Loot: "RTID(DefaultLoot@LevelModules)",
+        Modules: [
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(FrontLawnMowers@LevelModules)", // Why no work?
+          "RTID(CustomSunDropper@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(IPP@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(IPP_Protect@CurrentLevel)",
+        ],
+        Name: "Ice's Example Level",
+        NameMultiLanguage: {
+          en: "Ice's Example Level",
+          zh: "IceandFire04 的示例级别",
+        },
+        WritenBy: "Ice",
+        NormalPresentTable: "egypt_normal_01",
+        ShinyPresentTable: "egypt_shiny_01",
+        StageModule: "RTID(HalloweenStage@LevelModules)",
+      },
+    },
+    // Modules
+    {
+      aliases: ["IPP_Protect"],
+      objclass: "ProtectThePlantChallengeProperties",
+      objdata: {
+        Plants: [
+          { GridX: 3, GridY: 0, PlantType: "twinsunflower" },
+          { GridX: 3, GridY: 4, PlantType: "twinsunflower" },
+        ],
+        MustProtectCount: 1,
+      },
+    },
+    {
+      aliases: ["IPP"],
+      objclass: "InitialPlantProperties",
+      objdata: {
+        InitialPlantPlacements: [{ GridX: 0, GridY: 2, TypeName: "gatling" }],
+      },
+    },
+    {
+      aliases: ["CustomSunDropper"],
+      objclass: "SunDropperProperties",
+      objdata: {
+        InitialSunDropDelay: 2,
+        SunCountdownBase: 1.5,
+        SunCountdownIncreasePerSun: 0.1,
+        SunCountdownMax: 4,
+        SunCountdownRange: 0,
+      },
+    },
+    {
+      aliases: ["SeedBank"],
+      objclass: "SeedBankProperties",
+      objdata: {
+        PresetPlantList: [
+          {
+            PlantType: "sunflower",
+          },
+          {
+            PlantType: "sunflower",
+          },
+          {
+            PlantType: "bonkchoy",
+          },
+          {
+            PlantType: "pvine",
+          },
+          {
+            PlantType: "electricpeashooter",
+          },
+          {
+            PlantType: "gatling",
+          },
+          {
+            PlantType: "turnip",
+          },
+        ],
+        SelectionMethod: "preset",
+      },
+    },
+    {
+      aliases: ["NewWaves"],
+      objclass: "WaveManagerModuleProperties",
+      objdata: {
+        WaveManagerProps: "RTID(WaveManagerProps@CurrentLevel)",
+      },
+    },
+    // Waves!
+    {
+      aliases: ["WaveManagerProps"],
+      objclass: "WaveManagerProperties",
+      objdata: {
+        FlagWaveInterval: 10,
+        WaveCount: 10,
+        Waves: [
+          ["RTID(Wave1@CurrentLevel)"],
+          ["RTID(Wave2@CurrentLevel)"],
+          ["RTID(Wave3@CurrentLevel)"],
+          ["RTID(Wave4@CurrentLevel)"],
+          ["RTID(Wave5@CurrentLevel)"],
+          ["RTID(Wave6@CurrentLevel)"],
+          ["RTID(Wave7@CurrentLevel)"],
+          ["RTID(Wave8@CurrentLevel)", "RTID(GridSpawn8@CurrentLevel)"],
+          ["RTID(Wave9@CurrentLevel)"],
+          ["RTID(WaveBoss@CurrentLevel)"],
+        ],
+      },
+    },
+    {
+      aliases: ["Wave1"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 0,
+        Zombies: [
+          {
+            Type: "RTID(tutorial_armor1@ZombieTypes)",
+          },
+          {
+            Type: "RTID(mummy@CurrentLevel)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave2"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 1,
+        Zombies: [
+          {
+            Type: "RTID(kongfu_armor3@ZombieTypes)",
+          },
+          {
+            Type: "RTID(monk_flag_veteran@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave3"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 0,
+        Zombies: [
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(chicken_pumpkin@ZombieTypes)",
+          },
+          {
+            Type: "RTID(monk_nunchaku@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave4"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 0,
+        Zombies: [
+          {
+            Type: "RTID(dark_armor4@ZombieTypes)",
+          },
+          {
+            Type: "RTID(dark_juggler@ZombieTypes)",
+          },
+          {
+            Type: "RTID(dark_king_veteran@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_chi@ZombieTypes)", // Should be Qigong, tisk tisk tisk
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave5"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 1,
+        Zombies: [
+          {
+            Type: "RTID(beach_gargantuar@ZombieTypes)",
+          },
+          {
+            Type: "RTID(lostcity_relichunter@ZombieTypes)",
+          },
+          {
+            Type: "RTID(lostcity_relichunter@ZombieTypes)",
+          },
+          {
+            Type: "RTID(cannon@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave6"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 0,
+        Zombies: [
+          {
+            Type: "RTID(pelican@ZombieTypes)",
+          },
+          {
+            Type: "RTID(pharaoh_weak@ZombieTypes)",
+          },
+          {
+            Type: "RTID(pharaoh@ZombieTypes)",
+          },
+          {
+            Type: "RTID(west_bull_veteran@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_hammer@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave7"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 0,
+        Zombies: [
+          {
+            Type: "RTID(future_jetpack_veteran@ZombieTypes)",
+          },
+          {
+            Type: "RTID(future_protector@ZombieTypes)",
+          },
+          {
+            Type: "RTID(football_mech@ZombieTypes)",
+          },
+          {
+            Type: "RTID(disco_mech@ZombieTypes)",
+          },
+          {
+            Type: "RTID(dark_wizard_veteran@ZombieTypes)",
+          },
+          {
+            Type: "RTID(dark_king@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["Wave8"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 2,
+        Zombies: [
+          {
+            Type: "RTID(future_jetpack_veteran@ZombieTypes)",
+          },
+          {
+            Type: "RTID(sleighcart@ZombieTypes)",
+          },
+          {
+            Type: "RTID(sleighcart@ZombieTypes)",
+          },
+          {
+            Type: "RTID(camel_manyhump@ZombieTypes)",
+          },
+          {
+            Type: "RTID(camel_manyhump@ZombieTypes)",
+          },
+          {
+            Type: "RTID(camel_manyhump@ZombieTypes)",
+          },
+          {
+            Type: "RTID(tomb_raiser@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor1@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor1@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor2@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor1@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor2@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor1@ZombieTypes)",
+          },
+          {
+            Type: "RTID(kongfu_armor3@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    {
+      aliases: ["WaveBoss"],
+      objclass: "SpawnZombiesJitteredWaveActionProps",
+      objdata: {
+        AdditionalPlantfood: 1,
+        Zombies: [
+          {
+            Type: "RTID(zombossmech_future@ZombieTypes)",
+          },
+        ],
+      },
+    },
+    // Wave Events
+    {
+      aliases: ["GridSpawn8"],
+      objclass: "SpawnGravestonesWaveActionProps",
+      objdata: {
+        GravestonePool: [
+          { Count: 99, Type: "RTID(gravestone_tutorial@GridItemTypes)" },
+        ],
+        SpawnPositionsPool: [
+          { mX: 7, mY: 0 },
+          { mX: 6, mY: 1 },
+          { mX: 7, mY: 1 },
+          { mX: 8, mY: 1 },
+          { mX: 5, mY: 2 },
+          { mX: 7, mY: 2 },
+          { mX: 8, mY: 2 },
+          { mX: 5, mY: 3 },
+          { mX: 6, mY: 3 },
+          { mX: 7, mY: 3 },
+          { mX: 7, mY: 4 },
+          { mX: 8, mY: 4 },
+        ],
+        SpawnEffectAnimID: "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        SpawnSoundID: "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        DisplacePlants: true,
+        RandomPlacement: true,
+        ShakeScreen: false,
+        GridClassesToDestroy: [],
+      },
+    },
+  ],
+  version: 1,
+}
