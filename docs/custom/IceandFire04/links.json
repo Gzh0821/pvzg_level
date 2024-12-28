@@ -1,5 +1,21 @@
 {
     "author": "IceandFire04",
-    "authorInfo": "I like PvZ I think"
-
+    "authorInfo": "I like PvZ I think",
+    "levelList": [
+        {
+            "fileName": "IceExample.json5",
+            "Information": {
+                "uuid": "dffbcb3d-2f80-41e9-8959-800e79750393",
+                "Author": "IceandFire04",
+                "AuthorLink": "https://github.com/MrNooberDude",
+                "Introduction": "Template level utilizing custom level modules that I found really fun",
+                "GameVersion": "0.1.15",
+                "Version": "1.0",
+                "CreatedAt": "2024-12-28",
+                "UpdatedAt": "2024-12-28",
+                "Difficulty": "Hard",
+                "Category": "Survival"
+              }
+        }
+    ]
 }
