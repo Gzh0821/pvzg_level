@@ -13,6 +13,9 @@
         },
         "UnfunnyGuy":{
             "location": "/custom/UnfunnyGuy/links.json"
+        },
+        "IceandFire04":{
+            "location": "/custom/IceandFire04/links.json"
         }
     }
 }
