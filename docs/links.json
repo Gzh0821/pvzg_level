@@ -16,6 +16,9 @@
         },
         "IceandFire04":{
             "location": "/custom/IceandFire04/links.json"
+        },
+        "Enigma": {
+            "location": "/custom/Enigma/links.json"
         }
     }
 }

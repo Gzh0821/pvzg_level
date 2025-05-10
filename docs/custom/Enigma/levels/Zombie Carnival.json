@@ -1,0 +1,2387 @@
+{
+    "Information": {
+        "Category": "Survival",
+        "CreatedAt": "2025-05-08",
+        "Difficulty": "Hard",
+        "Introduction": {
+            "en": "The Zombies are going to hold the first \"Zombie Carnival\" ever in history. After a fair and democratic vote, they decided to have it in your house.",
+            "zh": "僵尸们即将举行史上第一次“僵尸狂欢节”。经过公平民主的投票，他们决定将地点定在你的房子。"
+        },
+        "UpdatedAt": "2025-05-08",
+        "Version": "1.0",
+        "name": {
+            "en": "Zombie Carnival",
+            "zh": "僵尸狂欢节"
+        },
+        "uuid": "88929902-a5e3-4cfa-9bc3-cc7f98320092"
+    },
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "~",
+                "LevelNumber": 1,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(FutureMowers@LevelModules)"
+                ],
+                "Name": "Zombie Carnival",
+                "NameMultiLanguage": {
+                    "en": "Zombie Carnival",
+                    "zh": "僵尸狂欢节"
+                },
+                "StageModule": "RTID(FutureStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 6,
+                "WaveCount": 30,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)",
+                        "RTID(SpiderRain1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)",
+                        "RTID(SpiderRain1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)",
+                        "RTID(SpiderRain1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)",
+                        "RTID(SpiderRain2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)",
+                        "RTID(SpiderRain2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave16@CurrentLevel)",
+                        "RTID(SpiderRain2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave17@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave18@CurrentLevel)",
+                        "RTID(SpiderRain3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave19@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave20@CurrentLevel)",
+                        "RTID(SpiderRain3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave21@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave22@CurrentLevel)",
+                        "RTID(SpiderRain3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave23@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave24@CurrentLevel)",
+                        "RTID(SpiderRain4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave25@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave26@CurrentLevel)",
+                        "RTID(SpiderRain4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave27@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave28@CurrentLevel)",
+                        "RTID(SpiderRain4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave29@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave30@CurrentLevel)",
+                        "RTID(SpiderRain5@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_flag_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_flag_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave17"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave18"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_flag_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave19"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave20"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave21"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave22"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave23"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave24"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_flag_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave25"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave26"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave27"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave28"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave29"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave30"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_flag_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(explorer_veteran@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "1"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "2"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "3"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "4"
+                    },
+                    {
+                        "Type": "RTID(future_gargantuar@ZombieTypes)",
+                        "row": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SpiderRain1"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 9,
+                "ColumnStart": 7,
+                "GroupSize": 6,
+                "SpiderCount": 6,
+                "SpiderZombieName": "future_imp"
+            }
+        },
+        {
+            "aliases": [
+                "SpiderRain2"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 9,
+                "ColumnStart": 6,
+                "GroupSize": 12,
+                "SpiderCount": 12,
+                "SpiderZombieName": "future_imp"
+            }
+        },
+        {
+            "aliases": [
+                "SpiderRain3"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 9,
+                "ColumnStart": 5,
+                "GroupSize": 18,
+                "SpiderCount": 18,
+                "SpiderZombieName": "future_imp"
+            }
+        },
+        {
+            "aliases": [
+                "SpiderRain4"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 9,
+                "ColumnStart": 4,
+                "GroupSize": 24,
+                "SpiderCount": 24,
+                "SpiderZombieName": "future_imp"
+            }
+        },
+        {
+            "aliases": [
+                "SpiderRain5"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 9,
+                "ColumnStart": 3,
+                "GroupSize": 30,
+                "SpiderCount": 30,
+                "SpiderZombieName": "future_imp"
+            }
+        }
+    ],
+    "version": 1
+}

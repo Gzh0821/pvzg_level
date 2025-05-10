@@ -1,0 +1,25 @@
+{
+    "author": "Enigma",
+    "authorInfo": "https://github.com/Pure-Happiness",
+    "levelList": [
+        {
+            "Information": {
+                "Category": "Survival",
+                "CreatedAt": "2025-05-08",
+                "Difficulty": "Hard",
+                "Introduction": {
+                    "en": "The Zombies are going to hold the first \"Zombie Carnival\" ever in history. After a fair and democratic vote, they decided to have it in your house.",
+                    "zh": "僵尸们即将举行史上第一次“僵尸狂欢节”。经过公平民主的投票，他们决定将地点定在你的房子。"
+                },
+                "UpdatedAt": "2025-05-08",
+                "Version": "1.0",
+                "name": {
+                    "en": "Zombie Carnival",
+                    "zh": "僵尸狂欢节"
+                },
+                "uuid": "88929902-a5e3-4cfa-9bc3-cc7f98320092"
+            },
+            "fileName": "Zombie Carnival.json"
+        }
+    ]
+}
